@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .panel{
+        width:100%;
+        height: 100%;
+    }
+</style>
+<body>
+    <div class="panel">
+        <form action="addCategory.php" method="post">
+            <div class="formgroup">
+                <lable>父级栏目</lable>
+                <select name="pid" id="">
+                    <option value="0">一级栏目</option>
+
+                    <!--<option value="1">二级栏目</option>-->
+                    <!--<option value="2">三级栏目</option>-->
+                </select>
+            </div>
+            <div class="formgroup">
+                <lable>栏目名称</lable>
+                <input type="text" name="cname" placeholder="栏目名称">
+            </div>
+            <div class="formgroup">
+                <input type="submit" name="sub">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

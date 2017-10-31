@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  overflow: hidden; }
+
+.header {
+  width: 100%;
+  height: 70px;
+  border-bottom: 1px solid skyblue;
+  display: flex;
+  align-items: center;
+  padding: 0 10px; }
+  .header > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 10px; }
+  .header > h3 {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-left: 10px; }
+  .header > a {
+    padding: 10px 15px;
+    background: skyblue;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: none; }
+
+.leftnav {
+  width: 180px;
+  position: absolute;
+  top: 70px;
+  bottom: 0;
+  border-right: 1px solid skyblue; }
+  .leftnav > h2 {
+    font-size: 18px;
+    font-weight: normal;
+    padding: 5px 15px;
+    border-bottom: 1px solid skyblue; }
+    .leftnav > h2 .on {
+      color: skyblue; }
+  .leftnav > ul {
+    display: none; }
+    .leftnav > ul > li {
+      height: auto; }
+      .leftnav > ul > li > a {
+        display: block;
+        color: #333333;
+        padding: 5px 25px;
+        text-decoration: none; }
+
+.content {
+  position: absolute;
+  left: 180px;
+  right: 0;
+  top: 70px;
+  bottom: 0; }
+  .content > iframe {
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=main.css.map */
