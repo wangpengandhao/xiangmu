@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none; }
+
+html, body {
+  width: 100%;
+  height: 100%; }
+
+body {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.panel {
+  width: 300px;
+  height: 250px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 20px 10px;
+  box-sizing: border-box; }
+  .panel .formgroup {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 0; }
+    .panel .formgroup select {
+      width: 100px;
+      height: 30px;
+      padding: 5px; }
+    .panel .formgroup input {
+      width: 100px;
+      height: 30px; }
+
+/*# sourceMappingURL=addCategory.css.map */
