@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/addCategory.css">
+</head>
+<body>
+<div class="panel">
+    <form action="addArticle.php" method="post" enctype="multipart/form-data">
+        <div class="formgroup">
+            <lable for="">父级栏目</lable>
+            <hr>
+            <select name="pid" id="">
+                <option value="0">一级栏目</option>
+
+                <!--<option value="1">二级栏目</option>-->
+                <!--<option value="2">三级栏目</option>-->
+                <?php echo $option;?>
+            </select>
+        </div>
+        <div class="formgroup">
+            <lable for="">文章标题</lable>
+            <hr>
+            <input type="text" name="title">
+        </div>
+
+        <div class="formgroup">
+            <lable for="">文章描述</lable>
+            <hr>
+            <textarea name="description"rows="3"></textarea>
+        </div>
+
+        <div class="formgroup">
+            <lable for="">文章价格</lable>
+            <hr>
+            <input type="text" name="price">
+         </div>
+
+        <div class="formgroup">
+            <lable for="">文章人数</lable>
+            <hr>
+            <textarea name="text"rows="3"></textarea>
+        </div>
+
+        <div class="formgroup">
+            <lable for="">缩略图</lable>
+            <hr>
+            <input type="file" name="img">
+        </div>
+
+        <div class="formgroup">
+            <input type="submit" name="sub">
+        </div>
+    </form>
+</div>
+</body>
+</html>

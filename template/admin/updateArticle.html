@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../static/css/addCategory.css">
+</head>
+<body>
+<div class="panel">
+    <form action="updateArticle.php" method="post">
+        <div class="formgroup">
+            <lable for="">父级栏目</lable>
+            <hr>
+            <select name="pid" id=" ">
+                <option value="0">一级栏目</option>
+                <?php $str;?>
+                <!--<option value="1">二级栏目</option>-->
+                <!--<option value="2">三级栏目</option>-->
+            </select>
+        </div>
+        <div class="formgroup">
+            <lable for="">文章标题</lable>
+            <hr>
+            <input type="text" name="title" value="<?php echo $title;?>">
+        </div>
+
+        <div class="formgroup">
+            <lable for="">文章描述</lable>
+            <hr>
+            <textarea name="description"rows="10"><?php echo $description;?></textarea>
+        </div>
+
+        <div class="formgroup">
+            <lable for="">文章价格</lable>
+            <hr>
+            <input type="text" name="price" value="<?php echo $price;?>">
+        </div>
+
+        <div class="formgroup">
+            <lable for="">文章人数</lable>
+            <hr>
+            <textarea name="text"rows="3"><?php echo $text;?></textarea>
+        </div>
+
+        <div class="formgroup">
+            <lable for="">缩略图</lable>
+            <hr>
+            <input type="file" name="img" tmp_name="<?php echo $file;?>">
+        </div>
+        <div class="formgroup">
+            <input type="hidden" name="cid" value="<?php echo $cid;?>">
+        </div>
+        <div class="formgroup">
+            <input type="submit" name="sub">
+        </div>
+    </form>
+</div>
+</body>
+</html>
