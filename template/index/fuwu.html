@@ -1,0 +1,101 @@
+
+	<link rel="stylesheet" href="../static/css/fuwu.css">
+	<section class="banner">
+		<div class="banner-top2">
+			<!--<span>分类：</span>
+
+			<?php
+        	for($i=0;$i<count($fu);$i++){
+        	?>
+				<a href="list.php?fid=<?php echo $fid?>"><?php echo $fu[$i]['cname']?></a>
+			<?php }?>-->
+		</div>
+	</section>
+	<!-- banner结束 -->
+	<!-- 内容开始 -->
+	<section class="neirong">
+		<?php
+			for($i=0;$i<count($neirong);$i++){
+		?>
+		<div class="neirong1">
+			<a href="jieshao.php?cid=<?php echo $neirong[$i]['cid'];?>">
+				<img src="<?php echo $neirong[$i]['file']?>" alt="">
+			</a>
+			<div class="neirong2">
+				<span><?php echo $neirong[$i]['title']?></span>
+				<span><?php echo $neirong[$i]['description']?></span>
+			</div>
+			<span class="neirong3"><?php echo $neirong[$i]['price']?></span>
+			<span class="neirong4">已有<span><?php echo $neirong[$i]['text']?></span>人预定</span>
+		</div>
+		<?php
+		 }
+		?>
+		<!--<div class="neirong1">-->
+			<!--<a href="jieshao.html">-->
+				<!--<img src="img/neirong.png" alt="">-->
+			<!--</a>-->
+			<!--<div class="neirong2">-->
+				<!--<span>宅洁士居家保洁-4小时</span>- -->
+				<!--<span>1人次</span>- -->
+				<!--<span>4小时</span>-->
+				<!--<span>居家保洁、玻璃清洗</span>-->
+			<!--</div>-->
+			<!--<span class="neirong3">￥199/人</span>-->
+			<!--<span class="neirong4">已有<span>195016</span>人预定</span>-->
+		<!--</div>-->
+		<!--<div class="neirong1">-->
+			<!--<a href="jieshao.html">-->
+				<!--<img src="img/neirong.png" alt="">-->
+			<!--</a>-->
+			<!--<div class="neirong2">-->
+				<!--<span>宅洁士居家保洁-4小时</span>- -->
+				<!--<span>1人次</span>- -->
+				<!--<span>4小时</span>-->
+				<!--<span>居家保洁、玻璃清洗</span>-->
+			<!--</div>-->
+			<!--<span class="neirong3">￥199/人</span>-->
+			<!--<span class="neirong4">已有<span>195016</span>人预定</span>-->
+		<!--</div>-->
+		<!--<div class="neirong1">-->
+			<!--<a href="jieshao.html">-->
+				<!--<img src="img/neirong.png" alt="">-->
+			<!--</a>-->
+			<!--<div class="neirong2">-->
+				<!--<span>宅洁士居家保洁-4小时</span>- -->
+				<!--<span>1人次</span>- -->
+				<!--<span>4小时</span>-->
+				<!--<span>居家保洁、玻璃清洗</span>-->
+			<!--</div>-->
+			<!--<span class="neirong3">￥199/人</span>-->
+			<!--<span class="neirong4">已有<span>195016</span>人预定</span>-->
+		<!--</div>-->
+		<!--<div class="neirong1">-->
+			<!--<a href="jieshao.html">-->
+				<!--<img src="img/neirong.png" alt="">-->
+			<!--</a>-->
+			<!--<div class="neirong2">-->
+				<!--<span>宅洁士居家保洁-4小时</span>- -->
+				<!--<span>1人次</span>- -->
+				<!--<span>4小时</span>-->
+				<!--<span>居家保洁、玻璃清洗</span>-->
+			<!--</div>-->
+			<!--<span class="neirong3">￥199/人</span>-->
+			<!--<span class="neirong4">已有<span>195016</span>人预定</span>-->
+		<!--</div>-->
+		<!--<div class="neirong1">-->
+			<!--<a href="jieshao.html">-->
+				<!--<img src="img/neirong.png" alt="">-->
+			<!--</a>-->
+			<!--<div class="neirong2">-->
+				<!--<span>宅洁士居家保洁-4小时</span>- -->
+				<!--<span>1人次</span>- -->
+				<!--<span>4小时</span>-->
+				<!--<span>居家保洁、玻璃清洗</span>-->
+			<!--</div>-->
+			<!--<span class="neirong3">￥199/人</span>-->
+			<!--<span class="neirong4">已有<span>195016</span>人预定</span>-->
+		<!--</div>-->
+	</section>
+	<!-- 内容结束 -->
+	<!-- 底部开始 -->

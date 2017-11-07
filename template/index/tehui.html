@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="../static/css/tehui.css">
+
+<!-- 内容开始 -->
+<?php for($i=0;$i<count($tehui);$i++){?>
+	<section class="neirong">
+		<a class="neirong1">
+			<div class="neirong1-left">
+				<?php echo $tehui[$i]['description']?>
+			</div>
+			<div class="neirong1-right">
+				<div class="neirong1-right1">
+					<?php echo $tehui[$i]['price']?>
+				</div>
+				<div class="neirong1-right2"><?php echo $tehui[$i]['text']?></div>
+			</div>
+		</a>
+	</section>
+<?php }?>
+	<!-- 内容结束 -->
+	<section class="neirong">
+		<div class="tu">
+			
+		</div>
+	</section>
+	<section class="neirong">
+		<div class="erweima">
+			<div></div>
+		</div>
+		<div class="zi">扫描二维码关注下次限时特惠刷新时间</div>
+	</section>

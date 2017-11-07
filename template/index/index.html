@@ -1,0 +1,49 @@
+
+<link rel="stylesheet" href="../static/css/index.css">
+<script src="../static/js/animate.js"></script>
+<script src="../static/js/jquery-3.2.1.js"></script>
+<script src="../static/js/index.js"></script>
+<section class="banner">
+    <?php for($i=0;$i<count($picture);$i++){?>
+    <a href="">
+        <img src="<?php echo $picture[$i]['file'];?>" alt="">
+    </a>
+    <?php }?>
+</section>
+<!--<section class="banner-bottom">-->
+    <!--<div class="banner-bottom1">-->
+        <!--<a href="">保洁</a>-->
+        <!--<a href="">维修</a>-->
+        <!--<a href="">保姆</a>-->
+        <!--<a href="">母婴</a>-->
+        <!--<a href="">健康</a>-->
+    <!--</div>-->
+<!--</section>-->
+<!-- banner结束 -->
+<!-- 家庭服务开始 -->
+<section class="fuwu">
+    <span>预定家庭服务</span>
+    <?php for($i=0;$i<count($texts);$i++){?>
+    <a href=""><?php echo $texts[$i]['file'];?></a>
+    <?php }?>
+</section>
+<section class="neirong">
+    <?php for($i=0;$i<count($nav);$i++){?>
+    <div class="neirong1">
+        <a href="jieshao.html">
+            <img src="<?php echo $nav[$i]['file']?>" alt="">
+        </a>
+        <div class="neirong2">
+            <span><?php echo $nav[$i]['title']?></span>-
+
+            <span><?php echo $nav[$i]['description']?></span>
+        </div>
+        <span class="neirong3"><?php echo $nav[$i]['price']?></span>
+        <span class="neirong4">已有<span><?php echo $nav[$i]['text']?></span>人预定</span>
+        <div class="zhezhao">
+            <a href="jieshao.php?cid=<?php echo $nav[$i]['cid'];?>">立即预定</a>
+        </div>
+    </div>
+    <?php }?>
+</section>
+<!-- 家庭服务结束 -->
